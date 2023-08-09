@@ -1,19 +1,23 @@
 .nav {
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  justify-content:space-around;
+  padding: 10px 20px;
+  /* position: fixed; */
+  background-color: grey;
 }
 
 .nav h1 {
-  color: blueviolet;
+  color: white;
   margin: 0;
   font-size: 40px;
 }
 .nav .nav-search {
-  flex: 1;
+  flex: 0.8;
   display: flex;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5px;
+  
 }
 
 .nav .nav-search input {
@@ -22,12 +26,20 @@
     border: 1px solid blueviolet;
     height: 39px;
     border-right: none;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .nav .nav-search button{
     color: blueviolet;
-    border: 1px solid blueviolet;
+    border: 1px solid rgb(18, 3, 32);
     height: 39px;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav .nav-search button:hover{
+  background-color: blueviolet;
+  color: white;
 }
 
 .nav ul {
@@ -44,12 +56,20 @@
 
 .nav ul a {
     text-decoration: none;
-    color: blueviolet;
+    color: white;
     cursor: pointer;
+    font-size: 20px;
+    margin-right: 3px;
+
+}
+
+.nav ul a:hover{
+  color: black;
+  border-radius: 5px;
 }
 
 h1 a{
-  color: blueviolet;
+  color: white;
   text-decoration: none;
 }
 

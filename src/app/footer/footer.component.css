@@ -2,21 +2,48 @@ ul{
     margin: 0;
     padding: 0;
 }
+ul h3{
+    padding: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: white;
+}
 .footer {
+    margin-top: 50px;
     padding: 10px;
-    text-align: center;
-    position: fixed;
+    /* text-align: center; */
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: #fff;
+    background-color: grey;
 }
 .footer ul{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    display:inline-block;
+    /* justify-content: space-between; */
+    margin-right:100px;
 }
+
 .footer ul li a{
-    color: blueviolet;
+    color:aliceblue;
     text-decoration: none;
+    font-size: large;
+    padding-left: 10px;
+    padding: 10px;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 20px;
+    color: aliceblue;
+}
+#map{
+    height: 200px;
+    width: 100px;
+}
+
+.contact li a{
+    color: aliceblue;
 }

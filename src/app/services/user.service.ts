@@ -10,18 +10,19 @@ export class UserService {
 invalidUserAuth= new EventEmitter<boolean>(false)
   constructor(private http: HttpClient, private router:Router) { }
   userSignUp(user:signUp){
-   this.http.post('http://localhost:3000/users',user,{observe:'response'})
+   this.http.post('http://localhost:4000/users',user,{observe:'response'})
    .subscribe((result)=>{
     if(result){
-      localStorage.setItem('user',JSON.stringify(result.body));
-      this.router.navigate(['/']);
+      alert("successfully registred")
+      // localStorage.setItem('user',JSON.stringify(result.body));
+      // this.router.navigate(['/']);
     }
     
    })
     
   }
   userLogin(data:login){
-    this.http.get<signUp[]>(`http://localhost:3000/users?email=${data.email}&password=${data.password}`,
+    this.http.get<signUp[]>(`http://localhost:4000/users?email=${data.email}&password=${data.password}`,
     {observe:'response'}
     ).subscribe((result)=>{
       if(result && result.body?.length){

@@ -41,6 +41,30 @@
       "password": "abc@123",
       "email": "bhasker@test.com",
       "id": 8
+    },
+    {
+      "name": "ramlal",
+      "password": "12345678",
+      "email": "ram@test.com",
+      "id": 9
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 11
+    },
+    {
+      "name": "ramlal",
+      "password": "12345678",
+      "email": "ram@gmail.com",
+      "id": 12
     }
   ],
   "products": [
@@ -132,6 +156,18 @@
       "email": "tony@user.com",
       "password": "abc123",
       "id": 4
+    },
+    {
+      "name": "ramlal",
+      "email": "ram@test.com",
+      "password": "12345678",
+      "id": 5
+    },
+    {
+      "name": "suresh kumar ",
+      "email": "suresh@gmail.com",
+      "password": "8654321",
+      "id": 6
     }
   ],
   "cart": [

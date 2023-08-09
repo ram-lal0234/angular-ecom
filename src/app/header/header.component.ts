@@ -13,12 +13,14 @@ export class HeaderComponent implements OnInit {
   userName:string="";
   searchResult:undefined|product[];
   cartItems=0;
+  seller=false;
   constructor(private route: Router, private product:ProductService) {}
 
   ngOnInit(): void {
     this.route.events.subscribe((val: any) => {
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
+          this.seller=true;
          let sellerStore=localStorage.getItem('seller');
          let sellerData =sellerStore && JSON.parse(sellerStore)[0];
          this.sellerName=sellerData.name;
