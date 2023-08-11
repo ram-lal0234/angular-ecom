@@ -4,55 +4,28 @@
     <div class="signup">
       <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
         <label for="chk" aria-hidden="true">Sign up</label>
-        <input
-          type="text"
-          class="form-input"
-          placeholder="Enter Name"
-          name="name"
-          ngModel
-          required=""
-        />
-        <input
-          type="password"
-          class="form-input"
-          placeholder="Enter Password"
-          name="password"
-          ngModel
-          required=""
-        />
-        <input
-          type="text"
-          class="form-input"
-          placeholder="Enter Email"
-          name="email"
-          ngModel
-          required
-        />
-        <button >Sign up</button>
+        <input type="text" class="form-input" placeholder="Enter Name" name="name" ngModel required="" />
+        <input type="password" class="form-input" placeholder="Enter Password" name="password" ngModel required="" />
+        <input type="text" class="form-input" placeholder="Enter Email" name="email" ngModel required />
+        <button>Sign up</button>
       </form>
     </div>
 
     <div class="login">
       <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
         <label for="chk" aria-hidden="true">Login</label>
-		<p class="error-p">{{ authError }}</p>
-        <input
-          type="text"
-          class="form-input"
-          placeholder="Enter Email"
-          name="email"
-          ngModel
-          required
-        />
-        <input
-          type="password"
-          class="form-input"
-          placeholder="Enter Password"
-          name="password"
-          ngModel
-          required
-        />
-        <button>Login</button>
+        <p class="error-p">{{ authError }}</p>
+        <input type="text" class="form-input" name="email" placeholder="Enter  Email" ngModel email #email="ngModel"
+          required />
+        <p class="invalid-input">
+          <span *ngIf="email.invalid && email.touched">Please enter valid input</span>
+        </p>
+        <input type="password" class="form-input" name="password" placeholder="Enter User Password" ngModel
+          minlength="2" maxlength="20" #password="ngModel" required />
+        <p class="invalid-input">
+          <span *ngIf="password.invalid && password.touched">Please enter valid input</span>
+        </p>
+        <button [disabled]="sellerLogin.invalid">Login</button>
       </form>
     </div>
   </div>

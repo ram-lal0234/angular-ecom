@@ -7,7 +7,10 @@
     margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
-   display: inline-block;
+    /* display: inline-block; */
+    background-color: aliceblue;
+    float: left;
+    width: 100%;
 }
 
 .product-item img{
@@ -32,7 +35,7 @@
     text-align: center;
 }
 .product-item .product-footer{
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     padding: 10px;
     border: none;
@@ -45,3 +48,4 @@
     padding: 5px 20px ;
     margin-right: 30px;
 }
+

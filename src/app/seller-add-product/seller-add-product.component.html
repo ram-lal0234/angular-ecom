@@ -1,53 +1,40 @@
+
 <div class="add-product">
-  <h1>Add New Product</h1>
-  <p class="message-p">{{addProductMessage}}</p>
-  <form #addProduct="ngForm"
-  (ngSubmit)="submit(addProduct.value)"
-   class="common-form">
-    <input
-      type="text"
-      class="form-input"
-      placeholder="Enter Product Name"
-      name="name"
-      ngModel
-    />
-    <input
-    type="text"
-    class="form-input"
-    placeholder="Enter Product Price"
-    name="price"
-    ngModel
-  />
-  <input
-  type="text"
-  class="form-input"
-  placeholder="Enter Product Category"
-  name="category"
-  ngModel
-/>
-<input
-type="text"
-class="form-input"
-placeholder="Enter Product Color"
-name="color"
-ngModel
-/>
-<textarea
-type="text"
-class="form-input"
-placeholder="Enter Product Description"
-name="description"
-ngModel
-></textarea>
-
-<input
-type="text"
-class="form-input"
-placeholder="Enter Product Image URL"
-name="image"
-ngModel
-/>
-<button class="form-button">Add Product</button>
-
-  </form>
+  <h1>
+    Add Product
+  </h1>
+  <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Product Name</mat-label>
+        <input matInput type="text" placeholder="Enter Product Name" name="name" ngModel>
+      </mat-form-field >
+      <mat-form-field appearance="outline" class="grid" >
+        <mat-label>Enter Product price</mat-label>
+        <input matInput type="text" placeholder="Enter Product price" name="price" ngModel >
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline" >
+        <mat-label>Enter Product Category</mat-label>
+        <input matInput type="text" placeholder="Enter Product Category" name="category" ngModel>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="grid">
+        <mat-label>Enter Product color</mat-label>
+        <input matInput type="text" placeholder="Enter Product color" name="color" ngModel>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Product Description</mat-label>
+        <textarea matInput type="text" placeholder="Enter Product Description" name="description" ngModel id="" cols="30" rows="5"></textarea>
+    </mat-form-field>  
+    <mat-form-field appearance="outline" class="grid">
+      <mat-label>Enter Product url</mat-label>
+      <input matInput type="text" placeholder="Enter Product Image URL"name="image" ngModel>
+    </mat-form-field>
+    </div>
+    
+  <button mat-raised-button  class="form-button" color="primary">Add Product</button>
+</form>
 </div>

@@ -2,74 +2,31 @@
   <div class="main">
     <input type="checkbox" id="chk" aria-hidden="true" />
     <div class="signup">
-      <form
-        #userSignUp="ngForm"
-        (ngSubmit)="signUp(userSignUp.value)"
-      >
-      <label for="chk" aria-hidden="true">Sign up</label>
-        <input
-          type="text"
-          class="form-input"
-          name="name"
-          placeholder="Enter  Name"
-          ngModel
-          required
-        />
-        <input
-          type="text"
-          class="form-input"
-          name="email"
-          placeholder="Enter User Email"
-          ngModel
-        /><input
-          type="password"
-          class="form-input"
-          name="password"
-          placeholder="Enter User Password"
-          ngModel
-        />
-        <button >Sign Up</button>
+      <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+        <label for="chk" aria-hidden="true">Sign up</label>
+        <input type="text" class="form-input" name="name" placeholder="Enter  Name" ngModel required />
+        <input type="text" class="form-input" name="email" placeholder="Enter User Email" ngModel /><input
+          type="password" class="form-input" name="password" placeholder="Enter User Password" ngModel />
+        <button>Sign Up</button>
       </form>
     </div>
     <div class="login">
-      <form
-        #userLogin="ngForm"
-        (ngSubmit)="login(userLogin.value)" >  
+      <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
         <label for="chk" aria-hidden="true">Login</label>
         <p class="error-p">{{ authError }}</p>
-        <input
-          type="text"
-          class="form-input"
-          name="email"
-          placeholder="Enter  Email"
-          ngModel
-          email
-          #email="ngModel"
-          required
-        />
+        <input type="text" class="form-input" name="email" placeholder="Enter  Email" ngModel email #email="ngModel"
+          required />
         <p class="invalid-input">
-          <span *ngIf="email.invalid && email.touched"
-            >Please enter valid input</span
-          >
+          <span *ngIf="email.invalid && email.touched">Please enter valid input</span>
         </p>
-        <input
-          type="password"
-          class="form-input"
-          name="password"
-          placeholder="Enter User Password"
-          ngModel
-          minlength="2"
-          maxlength="20"
-          #password="ngModel"
-          required
-        />
+        <input type="password" class="form-input" name="password" placeholder="Enter User Password" ngModel
+          minlength="2" maxlength="20" #password="ngModel" required />
         <p class="invalid-input">
-          <span *ngIf="password.invalid && password.touched"
-            >Please enter valid input</span>
+          <span *ngIf="password.invalid && password.touched">Please enter valid input</span>
         </p>
         <button [disabled]="userLogin.invalid">Login</button>
       </form>
     </div>
   </div>
-  
+
 </body>

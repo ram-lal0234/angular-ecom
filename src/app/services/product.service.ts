@@ -8,9 +8,11 @@ import { cart, order, product } from '../data-type';
 export class ProductService {
   cartData = new EventEmitter<product[] | []>();
   constructor(private http: HttpClient) { }
+
   addProduct(data: product) {
     return this.http.post('http://localhost:4000/products', data);
   }
+  
   productList() {
     return this.http.get<product[]>('http://localhost:4000/products');
   }
@@ -30,11 +32,11 @@ export class ProductService {
     );
   }
   popularProducts() {
-    return this.http.get<product[]>('http://localhost:4000/products?_limit=3');
+    return this.http.get<product[]>('http://localhost:4000/products?_limit=4');
   }
 
   trendyProducts() {
-    return this.http.get<product[]>('http://localhost:4000/products?_limit=8');
+    return this.http.get<product[]>('http://localhost:4000/products?_limit=20');
   }
 
   searchProduct(query: string) {

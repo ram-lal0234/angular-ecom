@@ -4,4 +4,13 @@ h1{
 }
 .add-product{
     text-align: center;
+    margin-top: 50px;
+}
+mat-form-field{
+    width: 40%;
+    margin-left: 15px;
+}
+.row{
+    display: flex;
+    margin-left: 100px;
 }

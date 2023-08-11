@@ -65,27 +65,21 @@
       "password": "12345678",
       "email": "ram@gmail.com",
       "id": 12
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 14
     }
   ],
   "products": [
-    {
-      "name": "Samsung m 40 a ",
-      "price": "550",
-      "category": "mobile",
-      "color": "white",
-      "description": "this is a Samsung product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": 1
-    },
-    {
-      "name": "I phone 14",
-      "price": "100000",
-      "category": "mobile",
-      "color": "black",
-      "description": "An Apple Product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "id": 2
-    },
     {
       "name": "HP Laptop",
       "price": "50000",
@@ -114,15 +108,6 @@
       "id": 5
     },
     {
-      "name": "Truck",
-      "price": "Toy",
-      "category": "Toys",
-      "color": "Red",
-      "description": "A toy for 5 year old child",
-      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
-      "id": 6
-    },
-    {
       "name": "Noise Smart Watch",
       "price": "2000",
       "category": "Watch",
@@ -130,6 +115,51 @@
       "description": "Noise smart watch for man and women both",
       "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
       "id": 7
+    },
+    {
+      "name": "samsung watch 4 LTE",
+      "price": "12999",
+      "category": "Watch",
+      "color": "Black",
+      "description": "samsung watch 4 LTE",
+      "image": "https://i.ebayimg.com/images/g/VNwAAOSwb6NiE7Vu/s-l400.jpg",
+      "id": 8
+    },
+    {
+      "name": "iwatch ultra",
+      "price": "79999",
+      "category": "Watch",
+      "color": "silver",
+      "description": "Apple Watch Ultra GPS + Cellular, 49mm Titanium Case with Orange Alpine Loop",
+      "image": "https://www.reliancedigital.in/medias/Apple-Ultra-Sports-Fitness-Watches-493177937-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wyNzkzNDB8aW1hZ2UvanBlZ3xpbWFnZXMvaDVkL2hkNS85ODkxOTQ0ODU3NjMwLmpwZ3xjYTAxNDEzNmY4ZjYyYTQ2ODY3YjA0MjEwMDU5ZTdiYjdkNmUzNmZlMzdhMjE0ZWU1M2M2NDEyMmZjOGUxNDhk",
+      "id": 9
+    },
+    {
+      "name": "Samsung S23 Ultra ",
+      "price": "134999",
+      "category": "Mobile",
+      "color": "Green",
+      "description": "Samsung Galaxy S23 Ultra 5G (Green, 12GB, 512GB Storage)",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2302/gallery/in-galaxy-s23-s918-sm-s918bzgcins-thumb-534863401?imwidth=480",
+      "id": 10
+    },
+    {
+      "name": "Samsung Galaxy S23 ",
+      "price": "79999",
+      "category": "Mobile",
+      "color": "Black",
+      "description": "samsung 23 5G ,8gb,256gb",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s911bzkbins/gallery/in-galaxy-s23-s911-sm-s911bzkbins-thumb-535265914?imwidth=480",
+      "id": 11
+    },
+    {
+      "name": "IQOO Neo 7 Pro",
+      "price": "37999",
+      "category": "Mobile",
+      "color": "Dark Strom",
+      "description": "IQOO Neo 7 Pro 5G 256 GB (Dark Storm, 12 GB RAM)",
+      "image": "https://img5.gadgetsnow.com/gd/images/products/additional/small/G452836_View_4/mobiles/smartphones/iqoo-neo-7-pro-5g-256-gb-dark-storm-12-gb-ram-.jpg",
+      "id": 12
     }
   ],
   "users": [
@@ -171,18 +201,6 @@
     }
   ],
   "cart": [
-    {
-      "name": "Samsung m 40 a ",
-      "price": "550",
-      "category": "mobile",
-      "color": "white",
-      "description": "this is a Samsung product",
-      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
-      "quantity": 1,
-      "productId": 1,
-      "userId": 3,
-      "id": 7
-    },
     {
       "name": "Levies Jeans",
       "price": "5000",
